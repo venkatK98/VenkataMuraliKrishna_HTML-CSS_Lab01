@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    header {
+      display: flex;
+      justify-content: flex-end;
+      background-color: #ae1a1a;
+      color: rgb(0, 0, 0);
+      padding: 20px;
+    }
+    
+    nav {
+      background-color: #333;
+      color: white;
+      padding: -5px;
+    }
+
+    ul.navbar {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    ul.navbar li {
+      display: inline-flex;
+      margin-right: 10px;
+      
+    }
+
+    ul.navbar li a {
+      display: block;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      padding: 10px;
+      text-decoration: none;
+    }
+
+    ul.navbar li.dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #d2c0c0;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      top: 167px;
+      
+
+    }
+
+    
+
+
+
+    .dropdown-content a {
+      
+      color: black;
+      padding: 12px 20px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #686868;
+    }
+  </style>
+
+
+</head>
+<body>
+  <header>
+    <h1>Demo of Dropdown</h1>
+  </header>
+
+  <nav>
+    <ul class="navbar">
+      <li><a href="#link1">Link 1</a></li>
+      <li class="dropdown">
+        <a href="#link2">Link 2</a>
+        <div class="dropdown-content">
+          <a href="#dd-link1">DD_Link_1</a>
+          <a href="#dd-link2">DD_Link_2</a>
+          <a href="#dd-link3">DD_Link_3</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#link3">Link 3</a>
+        <div class="dropdown-content">
+          <a href="#dd-link1">DD_Link_1</a>
+          <a href="#dd-link2">DD_Link_2</a>
+          <a href="#dd-link3">DD_Link_3</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</body>
+</html>
